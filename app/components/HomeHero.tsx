@@ -1,24 +1,9 @@
 'use client'
 import React from 'react'
 import Image from 'next/image';
-import Autoplay from "embla-carousel-autoplay"
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+import StackCarousel from './StackCarousel';
+import Navbar from './Navbar';
 
 const HomeHero = () => {
   return (
@@ -45,53 +30,10 @@ const HomeHero = () => {
                 </div>
             </div>
             <div className='flex-1 bg-blue-950 flex flex-row gap-2 sm:h-48'>
-                <div className='bg-green-400 rounded-2xl flex-1 flex items-center justify-center'>
-  <Carousel className='w-full h-full bg-pink-800 flex items-center justify-center relative rounded-2xl overflow-hidden' plugins={[
-        Autoplay({
-          delay: 5000,
-          jump:false,
-          stopOnMouseEnter:true,
-          stopOnInteraction:false
-        }),
-      ]}>
-
-    <CarouselContent className='h-full'>
-      <CarouselItem className='h-full flex items-center justify-center'>
-        <div className="w-full h-full flex items-center justify-center text-white text- bg-yellow-200  ">
-          Slide 1
-        </div>
-      </CarouselItem>
-      <CarouselItem className='h-full flex items-center justify-center'>
-        <div className="w-full h-full flex items-center justify-center text-white text- bg-yellow-200 ">
-          Slide 2
-        </div>
-      </CarouselItem>
-      <CarouselItem className='h-full flex items-center justify-center'>
-        <div className="w-full h-full flex items-center justify-center text-white text- bg-yellow-200 ">
-          Slide 3
-        </div>
-      </CarouselItem>
-      <CarouselItem className='h-full flex items-center justify-center'>
-        <div className="w-full h-full flex items-center justify-center text-white text- bg-yellow-200 ">
-          Slide 3
-        </div>
-      </CarouselItem>
-      <CarouselItem className='h-full flex items-center justify-center'>
-        <div className="w-full h-full flex items-center justify-center text-white text- bg-yellow-200 ">
-          Slide 3
-        </div>
-      </CarouselItem>
-      <CarouselItem className='h-full flex items-center justify-center'>
-        <div className="w-full h-full flex items-center justify-center text-white text- bg-yellow-200 ">
-          Slide 3
-        </div>
-      </CarouselItem>
-    </CarouselContent>
-<CarouselPrevious className='absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-amber-400 rounded-full w-10 h-10 flex items-center justify-center' />
-<CarouselNext className='absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-amber-400 rounded-full w-10 h-10 flex items-center justify-center' />
-
-  </Carousel>
-</div>
+                  <div className='bg-green-400 rounded-2xl flex-1 flex flex-col items-center justify-center relative'>
+                    <div className="text-left text-3xl mb-2">Tech Stack</div>
+                    <div><StackCarousel /></div>
+                  </div> 
 
                 <a href='/AashishRajaCV.pdf' download>
                     <div className="bg-green-800 h-full rounded-2xl flex items-center justify-center align-middle text-5xl p-3 text-center text-wrap flex-1"> Download my CV</div>
