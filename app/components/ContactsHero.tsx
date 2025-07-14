@@ -4,7 +4,7 @@ import {ArrowUp10} from "lucide-react";
 const ContactsHero = () => {
   return (
     <div className='bg-green-400 h-screen items-center justify-center flex lg:flex-row flex-col p-2 lg:overflow-hidden sm:overflow-auto'>
-       <div className="flex flex-col items-center p-6 bg-gray-100 rounded-2xl shadow-md">
+       <div className="flex flex-col items-center p-6 h-[200px] w-[350px] bg-gray-100 rounded-2xl shadow-md">
       <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
       <div className="flex space-x-6">
         <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">

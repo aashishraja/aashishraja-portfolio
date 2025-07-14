@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
+import localFont from "next/font/local"
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -12,6 +14,21 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+
+
+const myCustomFont = localFont({
+  src: './fonts/CabinetGrotesk-Bold.woff2', // Path to your font file
+  variable: '--font-custom', // Define a CSS variable
+  display: 'swap',
+});
+
+const myCustomFontSecond = localFont({
+  src: './fonts/CabinetGrotesk-Regular.woff2', // Path to your font file
+  variable: '--font-customsecond', // Define a CSS variable
+  display: 'swap',
+});
+
 
 export const metadata: Metadata = {
   title: "Aashish Raja",
@@ -26,9 +43,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${myCustomFont.variable} ${myCustomFontSecond.variable} antialiased`}
       >
-
         <main>{children}</main>
       </body>
     </html>

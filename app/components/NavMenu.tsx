@@ -14,7 +14,7 @@ const NavMenu = () => {
 
   return (
     <div className='flex items-center justify-center gap-x-5 bg-amber-900 h-full'>
-      <ul className='bg-amber-400 flex gap-x-48 px-6 items-center justify-center h-full'>
+      <ul className='bg-amber-400 flex gap-x-48 px-6 items-center justify-center h-full font-main'>
         {links.map(({ name, href }) => (
           <li key={href}>
             <Link
