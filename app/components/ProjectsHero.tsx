@@ -10,52 +10,55 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-  
+
 const projects = [
   {
-    title: "AI Chatbot",
-    description: "Built a smart customer support bot using NLP.",
+    title: "Project 1",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. COMING SOON",
   },
   {
-    title: "E-commerce Website",
-    description: "Full-stack online shop with checkout system.",
+    title: "Project 2",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. COMING SOON",
   },
   {
     title: "Portfolio Site",
-    description: "Responsive portfolio with animations.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. COMING SOON",
   }
-
 ];
-
 
 const ProjectsHero = () => {
   return (
-
-<Carousel className="w-full max-w-screen h-screen overflow-hidden flex items-center justify-center bg-amber-600 p-10"   opts={{
-    align: "start",
-
-
-  }}plugins={[
-        Autoplay({
-          delay: 2000,
-        }),
-      ]}>
+    <Carousel className="w-full max-w-screen h-screen overflow-hidden flex items-center justify-center p-10" opts={{
+      align: "center",
+    }} plugins={[
+      Autoplay({
+        delay: 2000,
+      }),
+    ]}>
       <CarouselContent className='-ml-0'>
-  {projects.map((project, index) => (
-    <CarouselItem key={index} className='pl-0 basis-1/3'>
-      <div className='p-3'>
-        <ProjectCard
-          title={project.title}
-          description={project.description}
-        />
-      </div>
-    </CarouselItem>
-  ))}
-</CarouselContent>
+        {projects.map((project, index) => {
+          // Assign font size based on title length
+          const fontSizeClass =
+            project.title.length > 10 ? "text-2xl"
+              : project.title.length > 6 ? "text-3xl"
+              : "text-1xl";
+
+          return (
+            <CarouselItem key={index} className='pl-0 basis-1/3'>
+              <div className='p-3'>
+                <ProjectCard
+                  title={project.title}
+                  description={project.description}
+                  fontSizeClass={fontSizeClass}
+                />
+              </div>
+            </CarouselItem>
+          );
+        })}
+      </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
-
   )
 }
 

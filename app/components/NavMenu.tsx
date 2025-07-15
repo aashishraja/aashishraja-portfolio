@@ -13,14 +13,14 @@ const NavMenu = () => {
   ];
 
   return (
-    <div className='flex items-center justify-center gap-x-5 bg-amber-900 h-full'>
-      <ul className='bg-amber-400 flex gap-x-48 px-6 items-center justify-center h-full font-main'>
+    <div className='flex items-center justify-center gap-x-5 h-full'>
+      <ul className='flex gap-x-48 px-6 items-center justify-center h-full font-main'>
         {links.map(({ name, href }) => (
           <li key={href}>
             <Link
               href={href}
               className={`transition-all px-2 py-1 ${
-                pathname === href ? 'text-white underline' : 'text-black'
+                pathname === href ? 'text-secondary underline' : 'text-gray-500'
               }`}
             >
               {name}

@@ -4,11 +4,11 @@ import NavMenu from './NavMenu'
 
 const Navbar = () => {
   return (
-    <div className='w-full bg-amber-400 p-2'>
-        <div className='bg-blue-500 h-28 flex flex-col rounded-2xl'>
+    <div className='w-full px-2 pt-2'>
+        <div className='bg-primary h-28 flex flex-col rounded-2xl'>
 
-          <div className='bg-amber-600 flex-1 text-5xl flex items-center justify-center p-4 font-main'>Aashish Raja</div>
-          <div className='bg-cyan-600 flex-1'><NavMenu/></div>
+          <div className='flex-1 text-5xl flex items-center justify-center p-4  pb-0 font-main text-secondary'>Aashish Raja</div>
+          <div className='flex-1'><NavMenu/></div>
 
         </div>
     </div>

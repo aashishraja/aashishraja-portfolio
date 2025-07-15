@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 
 const myCustomFont = localFont({
-  src: './fonts/CabinetGrotesk-Bold.woff2', // Path to your font file
+  src: './fonts/Panchang-Bold.woff2', // Path to your font file
   variable: '--font-custom', // Define a CSS variable
   display: 'swap',
 });
