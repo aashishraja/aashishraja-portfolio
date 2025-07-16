@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Test from '../components/Test'
+
 import ContactsHero from '../components/ContactsHero'
 
 const ContactsPage = () => {
