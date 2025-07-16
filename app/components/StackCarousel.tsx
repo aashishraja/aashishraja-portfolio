@@ -34,7 +34,7 @@ export function StackCarousel() {
 
   }}plugins={[
               Autoplay({
-                delay: 2000,
+                delay: 5000,
               }),
             ]}>
         <CarouselContent>
