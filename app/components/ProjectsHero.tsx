@@ -1,7 +1,7 @@
 'use client'
 import Autoplay from "embla-carousel-autoplay"
 import React from 'react'
-import { Card, CardContent } from "@/components/ui/card"
+
 import ProjectCard from './ProjectCard'
 import {
   Carousel,

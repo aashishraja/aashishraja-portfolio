@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState} from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const NavMenu = () => {
