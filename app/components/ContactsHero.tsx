@@ -1,5 +1,5 @@
 import React from 'react'
-import { Github, Bird,Linkedin, Mail } from "lucide-react";
+import { Github,Linkedin, Mail } from "lucide-react";
 
 const ContactsHero = () => {
   return (
