@@ -19,8 +19,8 @@ const projects = [
     demoLink: "",
   },
   {
-    title: "Spotify Song Recommendation System",
-    description: "Built an ETL pipeline using Spotify's API to create a data warehouse for music analytics. Leveraged clustering algorithms to analyze listening trends. Technologies used include Python, pandas, and scikit-learn. COMING SOON",
+    title: "F1 Race Data ETL Pipeline",
+    description: "Built an ETL pipeline using the FastF1 API to engineer a data warehouse for race analytics. Applied trend analysis and strategy modeling to evaluate driver and team performance. Technologies used include SQL, Python, and pandas. COMING SOON",
     repoLink: "",
     demoLink: "",
   },
