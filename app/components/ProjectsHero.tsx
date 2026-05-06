@@ -42,6 +42,7 @@ const ProjectsHero = () => {
   return (
     <Carousel className="w-full max-w-screen h-screen overflow-hidden flex items-center justify-center p-10" opts={{
       align: "center",
+      loop: true
     }} plugins={[
       Autoplay({
         delay: 2000,
