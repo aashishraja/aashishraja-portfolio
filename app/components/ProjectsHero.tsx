@@ -29,6 +29,12 @@ const projects = [
     description: "Developed a responsive portfolio website to showcase personal projects and technical skills focusing on a seamless user experience. Built using Next.js and Tailwind CSS.",
     repoLink: "https://github.com/aashishraja/aashishraja-portfolio",
     demoLink: "https://youtube.com",
+  },
+  {
+    title: "Excel Retail Sales Analytics Dashboard",
+    description: "Built an interactive Excel sales analytics dashboard using PivotTables for churn/retention analysis to identify customer segments and key business insights.",
+    repoLink: "https://github.com/aashishraja/ExcelRetailSalesAnalysis",
+    demoLink: "https://youtube.com",
   }
 ];
 
